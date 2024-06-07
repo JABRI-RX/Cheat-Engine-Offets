@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>78</ID>
+      <Description>"Data"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>79</ID>
+          <Description>"Player"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>80</ID>
+              <Description>"Position"</Description>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>77</ID>
+                  <Description>"X"</Description>
+                  <LastState Value="-1481.703491" RealAddress="0ABD4E60"/>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>FC3.dll+1E57AAC</Address>
+                  <Offsets>
+                    <Offset>E0</Offset>
+                    <Offset>184</Offset>
+                    <Offset>00</Offset>
+                    <Offset>138</Offset>
+                    <Offset>90</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>81</ID>
+                  <Description>"Y"</Description>
+                  <LastState Value="-1354.140015" RealAddress="0ABD4E64"/>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>FC3.dll+1E57AAC</Address>
+                  <Offsets>
+                    <Offset>E4</Offset>
+                    <Offset>184</Offset>
+                    <Offset>00</Offset>
+                    <Offset>138</Offset>
+                    <Offset>90</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>82</ID>
+                  <Description>"Z"</Description>
+                  <LastState Value="125.2951584" RealAddress="0ABD4E68"/>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>FC3.dll+1E57AAC</Address>
+                  <Offsets>
+                    <Offset>E8</Offset>
+                    <Offset>184</Offset>
+                    <Offset>00</Offset>
+                    <Offset>138</Offset>
+                    <Offset>90</Offset>
+                  </Offsets>
+                  <Hotkeys>
+                    <Hotkey>
+                      <Action>Increase Value</Action>
+                      <Keys>
+                        <Key>109</Key>
+                      </Keys>
+                      <Value>100</Value>
+                      <ID>0</ID>
+                    </Hotkey>
+                  </Hotkeys>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>91</ID>
+          <Description>"No Description"</Description>
+          <LastState Value="5.094932374E18" RealAddress="116A18D0"/>
+          <VariableType>Float</VariableType>
+          <Address>116A18D0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>89</ID>
+      <Description>"Addresses"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>88</ID>
+          <Description>"Health OpCode"</Description>
+          <LastState Value="1175523315" RealAddress="5D7E292D"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FC3.dll.text+3F192D </Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>96</ID>
+          <Description>"Special"</Description>
+          <LastState Value="08F640B0" RealAddress="5F26E3B0"/>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FC3.dll+1E7E3B0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>100</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>03EFEA80</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>101</ID>
+      <Description>"Dump"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>103</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>041FE960</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>104</ID>
+      <Description>"No description"</Description>
+      <LastState Value="0" RealAddress="06932DF0"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>06932DF0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>210</ID>
+      <Description>"No description"</Description>
+      <LastState Value="08F640B0" RealAddress="5F26E3B0"/>
+      <ShowAsHex>1</ShowAsHex>
+      <VariableType>4 Bytes</VariableType>
+      <Address>FC3.dll+1E7E3B0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>211</ID>
+      <Description>"No description"</Description>
+      <LastState Value="5E9E6830" RealAddress="5F26E418"/>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>FC3.dll+1E7E3B0+68</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>212</ID>
+      <Description>"No description"</Description>
+      <LastState Value="150356144" RealAddress="5F26E3B0"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>FC3.dll+1E7E3B0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>213</ID>
+      <Description>"No description"</Description>
+      <LastState Value="3700118467" RealAddress="5E1DD346"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>FC3.FCE_Draw_Square+198 </Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>214</ID>
+      <Description>"No description"</Description>
+      <LastState Value="1373408083" RealAddress="5E1DD1AE"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>FC3.FCE_Draw_Square </Address>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Change of mov edi,[eax+04]</Description>
+      <AddressString>FC3.dll+3F2942</AddressString>
+      <Before>
+        <Byte>0C</Byte>
+        <Byte>00</Byte>
+        <Byte>74</Byte>
+        <Byte>72</Byte>
+        <Byte>57</Byte>
+      </Before>
+      <Actual>
+        <Byte>8B</Byte>
+        <Byte>78</Byte>
+        <Byte>04</Byte>
+      </Actual>
+      <After>
+        <Byte>33</Byte>
+        <Byte>C9</Byte>
+        <Byte>8D</Byte>
+        <Byte>47</Byte>
+        <Byte>08</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movaps [esi+000000E0],xmm0</Description>
+      <AddressString>FC3.dll+10DCB43</AddressString>
+      <Before>
+        <Byte>D0</Byte>
+        <Byte>50</Byte>
+        <Byte>8B</Byte>
+        <Byte>46</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>0F</Byte>
+        <Byte>29</Byte>
+        <Byte>86</Byte>
+        <Byte>E0</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>40</Byte>
+        <Byte>78</Byte>
+        <Byte>D9</Byte>
+        <Byte>40</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movaps [esi+000000E0],xmm0</Description>
+      <AddressString>FC3.dll+10DF5B6</AddressString>
+      <Before>
+        <Byte>F1</Byte>
+        <Byte>8B</Byte>
+        <Byte>46</Byte>
+        <Byte>08</Byte>
+        <Byte>57</Byte>
+      </Before>
+      <Actual>
+        <Byte>0F</Byte>
+        <Byte>29</Byte>
+        <Byte>86</Byte>
+        <Byte>E0</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>85</Byte>
+        <Byte>C0</Byte>
+        <Byte>74</Byte>
+        <Byte>3E</Byte>
+        <Byte>8B</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+  <Comments>Info about this table:
+</Comments>
+  <DisassemblerComments>
+    <DisassemblerComment>
+      <Address>"FGUY.exe"+1F440</Address>
+      <Comment>start of the worldToScreen Function %?
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"FC3.dll"+5F8C16</Address>
+      <Comment>fuck this opcode
+</Comment>
+    </DisassemblerComment>
+  </DisassemblerComments>
+</CheatTable>

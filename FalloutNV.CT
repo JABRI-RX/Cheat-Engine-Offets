@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Data"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>0</ID>
+          <Description>"Viewmatrix"</Description>
+          <LastState Value="-0.1839374304" RealAddress="011C6330"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>011C6330</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>100</ID>
+          <Description>"No description"</Description>
+          <LastState Value="-0.3691884577" RealAddress="340022C0"/>
+          <VariableType>Float</VariableType>
+          <Address>340022C0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Player"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>7</ID>
+              <Description>"Position"</Description>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>8</ID>
+                  <Description>"X"</Description>
+                  <LastState Value="-10564.01367" RealAddress="1D9EB4E0"/>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>FalloutNV.exe+E07830</Address>
+                  <Offsets>
+                    <Offset>30</Offset>
+                    <Offset>08</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>9</ID>
+                  <Description>"Y"</Description>
+                  <LastState Value="559.4612427" RealAddress="1D9EB4E4"/>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>FalloutNV.exe+E07830</Address>
+                  <Offsets>
+                    <Offset>34</Offset>
+                    <Offset>08</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10</ID>
+                  <Description>"Z"</Description>
+                  <LastState Value="1264.423218" RealAddress="1D9EB4E8"/>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Float</VariableType>
+                  <Address>FalloutNV.exe+E07830</Address>
+                  <Offsets>
+                    <Offset>38</Offset>
+                    <Offset>08</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>19</ID>
+          <Description>"ViewAngle"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>21</ID>
+              <Description>"Pitch"</Description>
+              <LastState Value="0.3781173825" RealAddress="184ED7E8"/>
+              <VariableType>Float</VariableType>
+              <Address>184ED7E8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>20</ID>
+              <Description>"Roll?"</Description>
+              <LastState Value="0" RealAddress="184ED7EC"/>
+              <VariableType>Float</VariableType>
+              <Address>184ED7EC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>18</ID>
+              <Description>"Yaw"</Description>
+              <LastState Value="6.113471985" RealAddress="184ED7F0"/>
+              <VariableType>Float</VariableType>
+              <Address>184ED7F0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>102</ID>
+          <Description>"Dump"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>101</ID>
+              <Description>"No description"</Description>
+              <LastState Value="153296076" RealAddress="09231CA0"/>
+              <VariableType>4 Bytes</VariableType>
+              <Address>09231CA0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>913</ID>
+          <Description>"Scripts"</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>912</ID>
+              <Description>"rapidFire"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : FalloutNV.exe
+  Version: 
+  Date   : 2023-11-15
+  Author : R00T
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(INJECT,FalloutNV.exe,D9 56 48 5F D9 5E 34) // should be unique
+registersymbol(INJECT)
+
+INJECT:
+  db 90 90 90 5F D9 5E 34
+
+
+[DISABLE]
+
+INJECT:
+  db D9 56 48 5F D9 5E 34
+
+unregistersymbol(INJECT)
+
+
+{
+// ORIGINAL CODE - INJECTION POINT: FalloutNV.exe.text+63401A
+
+FalloutNV.exe.text+633FF7: 8D 44 24 20        - lea eax,[esp+20]
+FalloutNV.exe.text+633FFB: 50                 - push eax
+FalloutNV.exe.text+633FFC: 83 C1 44           - add ecx,44
+FalloutNV.exe.text+633FFF: 89 74 24 24        - mov [esp+24],esi
+FalloutNV.exe.text+634003: E8 F8 9B 44 00     - call FalloutNV.exe.text+A7DC00
+FalloutNV.exe.text+634008: D9 EE              - fldz 
+FalloutNV.exe.text+63400A: D9 5E 4C           - fstp dword ptr [esi+4C]
+FalloutNV.exe.text+63400D: D9 05 5C 5F 01 01  - fld dword ptr [FalloutNV.exe.rdata+36F5C]
+FalloutNV.exe.text+634013: 80 7C 24 10 00     - cmp byte ptr [esp+10],00
+FalloutNV.exe.text+634018: 74 03              - je FalloutNV.exe.text+63401D
+// ---------- INJECTING HERE ----------
+FalloutNV.exe.text+63401A: D9 56 48           - fst dword ptr [esi+48]
+// ---------- DONE INJECTING  ----------
+FalloutNV.exe.text+63401D: 5F                 - pop edi
+FalloutNV.exe.text+63401E: D9 5E 34           - fstp dword ptr [esi+34]
+FalloutNV.exe.text+634021: B0 01              - mov al,01
+FalloutNV.exe.text+634023: 5E                 - pop esi
+FalloutNV.exe.text+634024: C2 18 00           - ret 0018
+FalloutNV.exe.text+634027: CC                 - int 3 
+FalloutNV.exe.text+634028: CC                 - int 3 
+FalloutNV.exe.text+634029: CC                 - int 3 
+FalloutNV.exe.text+63402A: CC                 - int 3 
+FalloutNV.exe.text+63402B: CC                 - int 3 
+}
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>914</ID>
+      <Description>"No description"</Description>
+      <LastState Value="-0.156898424" RealAddress="011DEF44"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>0x11DEF44 </Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>915</ID>
+      <Description>"No description"</Description>
+      <LastState Value="-0.2554382384" RealAddress="011DEF6C"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>011DEF6C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>916</ID>
+      <Description>"No description"</Description>
+      <LastState Value="-0.2554382384" RealAddress="011DEF6C"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>011DEF6C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>917</ID>
+      <Description>"No description"</Description>
+      <LastState Value="1.971292019" RealAddress="011E0CBC"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>011E0CBC</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Change of mov [esi],ecx</Description>
+      <AddressString>FalloutNV.exe+674EDC</AddressString>
+      <Before>
+        <Byte>4A</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+        <Byte>8B</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>0E</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>04</Byte>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+0C],edx</Description>
+      <AddressString>FalloutNV.exe+674EED</AddressString>
+      <Before>
+        <Byte>4E</Byte>
+        <Byte>08</Byte>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>0C</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+        <Byte>0C</Byte>
+      </Actual>
+      <After>
+        <Byte>D9</Byte>
+        <Byte>47</Byte>
+        <Byte>14</Byte>
+        <Byte>D9</Byte>
+        <Byte>5C</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of push edx</Description>
+      <AddressString>FalloutNV.exe+6694BD</AddressString>
+      <Before>
+        <Byte>B9</Byte>
+        <Byte>07</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>52</Byte>
+      </Actual>
+      <After>
+        <Byte>F3</Byte>
+        <Byte>A5</Byte>
+        <Byte>50</Byte>
+        <Byte>8D</Byte>
+        <Byte>4B</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [edx+08],ecx</Description>
+      <AddressString>FalloutNV.exe+6EA9C6</AddressString>
+      <Before>
+        <Byte>42</Byte>
+        <Byte>04</Byte>
+        <Byte>8B</Byte>
+        <Byte>49</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>4A</Byte>
+        <Byte>08</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>E5</Byte>
+        <Byte>5D</Byte>
+        <Byte>C2</Byte>
+        <Byte>08</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of fstp dword ptr [ecx+48]</Description>
+      <AddressString>FalloutNV.exe+632932</AddressString>
+      <Before>
+        <Byte>D8</Byte>
+        <Byte>D9</Byte>
+        <Byte>44</Byte>
+        <Byte>24</Byte>
+        <Byte>04</Byte>
+      </Before>
+      <Actual>
+        <Byte>D9</Byte>
+        <Byte>59</Byte>
+        <Byte>48</Byte>
+      </Actual>
+      <After>
+        <Byte>C2</Byte>
+        <Byte>08</Byte>
+        <Byte>00</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Code :fst dword ptr [esi+48]</Description>
+      <AddressString>FalloutNV.exe+63501A</AddressString>
+      <Before>
+        <Byte>24</Byte>
+        <Byte>10</Byte>
+        <Byte>00</Byte>
+        <Byte>74</Byte>
+        <Byte>03</Byte>
+      </Before>
+      <Actual>
+        <Byte>D9</Byte>
+        <Byte>56</Byte>
+        <Byte>48</Byte>
+      </Actual>
+      <After>
+        <Byte>5F</Byte>
+        <Byte>D9</Byte>
+        <Byte>5E</Byte>
+        <Byte>34</Byte>
+        <Byte>B0</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [eax+04],ecx</Description>
+      <AddressString>FalloutNV.exe+2ECD4D</AddressString>
+      <Before>
+        <Byte>45</Byte>
+        <Byte>FC</Byte>
+        <Byte>8B</Byte>
+        <Byte>4D</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>48</Byte>
+        <Byte>04</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>E5</Byte>
+        <Byte>5D</Byte>
+        <Byte>C2</Byte>
+        <Byte>04</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [ecx+04],eax</Description>
+      <AddressString>FalloutNV.exe+C4F70</AddressString>
+      <Before>
+        <Byte>45</Byte>
+        <Byte>14</Byte>
+        <Byte>8B</Byte>
+        <Byte>4D</Byte>
+        <Byte>CC</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>41</Byte>
+        <Byte>04</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>55</Byte>
+        <Byte>14</Byte>
+        <Byte>89</Byte>
+        <Byte>95</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+04],edx</Description>
+      <AddressString>FalloutNV.exe+674EE1</AddressString>
+      <Before>
+        <Byte>89</Byte>
+        <Byte>0E</Byte>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>04</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+        <Byte>04</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>48</Byte>
+        <Byte>08</Byte>
+        <Byte>89</Byte>
+        <Byte>4E</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+08],ecx</Description>
+      <AddressString>FalloutNV.exe+674EE7</AddressString>
+      <Before>
+        <Byte>56</Byte>
+        <Byte>04</Byte>
+        <Byte>8B</Byte>
+        <Byte>48</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>4E</Byte>
+        <Byte>08</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>0C</Byte>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+24],edx</Description>
+      <AddressString>FalloutNV.exe+6752D7</AddressString>
+      <Before>
+        <Byte>4E</Byte>
+        <Byte>20</Byte>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>04</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+        <Byte>24</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>48</Byte>
+        <Byte>08</Byte>
+        <Byte>89</Byte>
+        <Byte>4E</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+10],edx</Description>
+      <AddressString>FalloutNV.exe+674F90</AddressString>
+      <Before>
+        <Byte>4A</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+        <Byte>8B</Byte>
+        <Byte>10</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+        <Byte>10</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>48</Byte>
+        <Byte>04</Byte>
+        <Byte>89</Byte>
+        <Byte>4E</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+18],edx</Description>
+      <AddressString>FalloutNV.exe+674F9C</AddressString>
+      <Before>
+        <Byte>4E</Byte>
+        <Byte>14</Byte>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+        <Byte>18</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>40</Byte>
+        <Byte>0C</Byte>
+        <Byte>89</Byte>
+        <Byte>46</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+1C],eax</Description>
+      <AddressString>FalloutNV.exe+674FA2</AddressString>
+      <Before>
+        <Byte>56</Byte>
+        <Byte>18</Byte>
+        <Byte>8B</Byte>
+        <Byte>40</Byte>
+        <Byte>0C</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>46</Byte>
+        <Byte>1C</Byte>
+      </Actual>
+      <After>
+        <Byte>80</Byte>
+        <Byte>7F</Byte>
+        <Byte>18</Byte>
+        <Byte>00</Byte>
+        <Byte>0F</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+20],ecx</Description>
+      <AddressString>FalloutNV.exe+6752D1</AddressString>
+      <Before>
+        <Byte>46</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+        <Byte>8B</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>4E</Byte>
+        <Byte>20</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>04</Byte>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+28],ecx</Description>
+      <AddressString>FalloutNV.exe+6752DD</AddressString>
+      <Before>
+        <Byte>56</Byte>
+        <Byte>24</Byte>
+        <Byte>8B</Byte>
+        <Byte>48</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>4E</Byte>
+        <Byte>28</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>0C</Byte>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+2C],edx</Description>
+      <AddressString>FalloutNV.exe+6752E3</AddressString>
+      <Before>
+        <Byte>4E</Byte>
+        <Byte>28</Byte>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>0C</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+        <Byte>2C</Byte>
+      </Actual>
+      <After>
+        <Byte>D9</Byte>
+        <Byte>47</Byte>
+        <Byte>04</Byte>
+        <Byte>DC</Byte>
+        <Byte>C8</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+30],edx</Description>
+      <AddressString>FalloutNV.exe+6753CC</AddressString>
+      <Before>
+        <Byte>45</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+        <Byte>8B</Byte>
+        <Byte>10</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>56</Byte>
+        <Byte>30</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>48</Byte>
+        <Byte>04</Byte>
+        <Byte>89</Byte>
+        <Byte>4E</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [esi+3C],eax</Description>
+      <AddressString>FalloutNV.exe+6753DE</AddressString>
+      <Before>
+        <Byte>56</Byte>
+        <Byte>38</Byte>
+        <Byte>8B</Byte>
+        <Byte>40</Byte>
+        <Byte>0C</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>46</Byte>
+        <Byte>3C</Byte>
+      </Actual>
+      <After>
+        <Byte>D9</Byte>
+        <Byte>47</Byte>
+        <Byte>08</Byte>
+        <Byte>DC</Byte>
+        <Byte>C8</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of fstp dword ptr [ecx+000000CC]</Description>
+      <AddressString>FalloutNV.exe+670F33</AddressString>
+      <Before>
+        <Byte>99</Byte>
+        <Byte>C8</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>D9</Byte>
+        <Byte>99</Byte>
+        <Byte>CC</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>D9</Byte>
+        <Byte>C9</Byte>
+        <Byte>D9</Byte>
+        <Byte>99</Byte>
+        <Byte>D0</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+  <Comments>Info about this table:
+</Comments>
+  <DisassemblerComments>
+    <DisassemblerComment>
+      <Address>"FGUY.exe"+1F440</Address>
+      <Comment>start of the worldToScreen Function %?
+</Comment>
+    </DisassemblerComment>
+  </DisassemblerComments>
+</CheatTable>
